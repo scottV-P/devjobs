@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --violet:#5964E0;
+    --lightviolet:#939BF4;
+    --verydarkblue:#19202D;
+    --midnight:#121721;
+    --lightgrey:#f2f2f2;
+    --gray:#9DAEC2;
+    --darkgrey:#6E8098;
+}
+html, body{
+    margin:0;
+    font-family:'Kumbh Sans', Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 28px;
+    line-height: 34px;
+    font-weight:700;
+}
+h2{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight:700;
+}
+h3{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight:700;
+}
+h4{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight:700;
+}
+p, li{
+    font-size:16px;
+    line-height:26px;
+    font-weight:400; 
+    color:var(--gray)
+}
+body{
+    background-color: var(--lightgrey);
+}
+.page-title:hover{
+    color:var(--lightgrey);
+    transition:0.5s;
+    cursor:pointer;
+}
+header{
+    display:flex;
+    background: url("./assets/desktop/bg-pattern-header.svg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    height:160px;
+    color:white;
+    justify-content: space-around;
+    align-items: center;
+}
+.page-title{
+    margin-right:940px;
+}
+.theme-switch{
+    padding:5px;
+    width:48px;
+    height:24px;
+    border-radius: 15px;
+    display:flex;
+    align-items: center;
+    border:none;
+}
+.switch-light{
+    flex-direction: row;
+}
+.switch-dark{
+    flex-direction: row-reverse;
+}
+.circle{
+    background-color: var(--violet);
+    width:14px;
+    height:14px;
+    border-radius:50%;
+}
+.empty{
+    width:14px;
+    height:14px;
+}
+.theme-switch-container{
+    display:flex;
+    gap:10px;
+}
+.input-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 430px;
+    margin-right:430px;
+    padding:10px;
+    margin-top: -25px;
+    border-radius: 10px;
+    flex-grow: 0;
+}
+input{
+    padding: 10px;
+    border:none;
+    font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif
+}
+.dropdown-content{
+    display:flex;
+    flex-direction: column;
+}
+.filter-container, .filter-location-container{
+    flex: 0 0 70%;
+}
+.filter-location-container, .filter-container{
+    display:flex;
+    align-items: center;
+}
+#filter, #filter-location{
+    width:80%;
+}
+.border-right{
+    border-right:1px solid var(--gray);
+    
+}
+.noactive:focus{
+    outline: none;
+}
+.checkbox{
+    padding:10px;
+    height:24px;
+    width:24px;
+}
+.checkbox-test{
+    font-weight:700;
+}
+.checkbox-container{
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+.search-button{
+    padding:10px;
+    width:123px;
+    height:48px;
+    background-color: var(--violet);
+    color:white;
+    border-radius: 10px;
+    border:none;
+    font-weight:700;
+    font-family:'Kumbh Sans', Arial, Helvetica, sans-serif
+}
+button, .checkbox{
+    cursor:pointer;
+}
+.search-button:hover, .theme-switch-container:hover .circle{
+    background-color: var(--lightviolet);
+    transition: .5s;
+}
+.main-container{
+    width:1021px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:50px 25px;
+    margin-top:60px;
+    margin-left:430px;
+    padding:10px;
+}
+.job-container{
+    width:266px;
+    height:200px;
+    background:white;
+    padding:30px 30px;
+    border-radius:5px;
+}
+.job-container:hover{
+    cursor:pointer;
+}
+.job-icon{
+    background-color: hsl(36, 87%, 49%);
+    border-radius: 15px;
+    padding:20px 10px;
+    position: relative;
+    bottom: 35px;
+}
+.job-posted, .job-time, .job-company{
+    color:var(--gray);
+    margin:0;
+}
+.job-title{
+    margin:13px 0;
+}
+.job-title:hover, .job-location:hover{
+    color:var(--darkgrey);
+    transition:.5s;
+    cursor:pointer;
+}
+.job-location{
+    color:var(--violet);
+    margin-top:40px;
+}
+.description-top{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+.small-circle{
+    border-radius: 2px;
+    height:4px;
+    width:4px;
+    margin-bottom:-8px;
+    background-color: var(--darkgrey);
+}
+.company-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-left:540px;
+    margin-right:540px;
+    padding:20px;
+    border-radius:6px;
+    margin-top:-40px;
+}
+.company-container-dark{
+    background-color:var(--verydarkblue)
+}
+.dark-mode{
+    background-color: var(--verydarkblue);
+    color:white;
+}
+.left-company-container{
+    flex:0 0 20%;
+    margin-left:30px;
+}
+.company-container-logo{
+    padding:45px 
+}
+.middle-company-container{
+    flex:0 0 30%;
+}
+.right-company-container{
+    flex:0 0 50%;
+    margin-left:-50px;
+}
+.company-site{
+    float:right;
+    color:white;
+    background-color:var(--lightviolet);
+    border:none;
+    padding:15px;
+    border-radius: 10px;
+    font-family:'Kumbh Sans', Arial, Helvetica, sans-serif;
+    font-weight:700;
+    margin-right:40px;
+    width:130px;
+}
+.company-site:hover{
+    background-color:var(--violet);
+    transition:0.5s;
+}
+.job-description-container{
+    margin-top:40px;
+    margin-left:540px;
+    margin-right:540px;
+    padding:60px;
+    background-color: white;
+    border-radius: 6px;
+}
+.top-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.job-description-title{
+    margin:10px 0;
+}
+.job-description-location{
+    color:var(--violet);
+    margin-top:10px;
+}
+.apply-button{
+    color:white;
+    background-color:var(--violet);
+    border:none;
+    padding:15px;
+    border-radius: 10px;
+    font-family:'Kumbh Sans', Arial, Helvetica, sans-serif;
+    font-weight:700;
+    width:130px;
+}
+.apply-button:hover{
+    background-color: var(--lightviolet);
+    transition:0.5s;
+}
+.requirements-container{
+    margin:60px 0px;
+}
+.role-container{
+    margin-top:60px;
+}
+a{
+    text-decoration: none;
+    color:var(--darkgrey)
+}
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top:40px;
+    padding:10px 60px;
+}
+ul{
+    padding:20px;
+}
+ol { 
+    counter-reset: item;
+    padding:0;
+}
+ol li { 
+    display: block; 
+}
+ol li:before {
+    content: counter(item) " ";
+    counter-increment: item;
+    color: var(--violet);
+}
+.hidden{
+    display:none !important;
+}
